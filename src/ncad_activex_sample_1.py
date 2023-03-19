@@ -31,6 +31,10 @@ if nanocad_app is not None:
     }
     print(str(app_params))
     ncad_doc = nanocad_app.ActiveDocument
+    """
+    Заметим, что метод Application.Open() не работает, в отличие от Document.Open(), поэтому для открытия существующих
+     DWG файлов используйте метод Open из любого другого документа
+    """
     if ncad_doc is not None:
         print("Документ обнаружен. Имя = " + ncad_doc.Name)
         #Дальнейшая работа с активным документом
