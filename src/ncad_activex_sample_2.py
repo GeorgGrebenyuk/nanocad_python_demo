@@ -59,7 +59,7 @@ if ncad_doc is not None:
     for AcadEntity_counter in range(0, ncad_modespace.Count, 1):
         AcadEntity = ncad_modespace.Item(AcadEntity_counter)
         if AcadEntity.ObjectName == "AcDbLine":
-            object_as_AcDbLine = win32com.client.CastTo(AcadEntity, 'IAcadLine')
+            object_as_AcDbLine = win32com.client.CastTo(AcadEntity, "IAcadLine")
             if object_as_AcDbLine is not None:
                 print("Длина отрезка = " + str(object_as_AcDbLine.Length))
                 break
