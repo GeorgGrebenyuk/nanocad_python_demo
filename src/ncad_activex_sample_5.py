@@ -36,6 +36,11 @@ if ncad_doc is not None:
     TNR_TestStyle_name = "TimesNewRoman TEXT STYLE"
     TNR_TextStyle = ncad_db.TextStyles.Add(TNR_TestStyle_name)
     TNR_TextStyle.SetFont("Times New Roman", False, False, 1, 64)
+    """
+    Примечание: выше мы создавали стиль для TTF шрифта, предполагая что он подгружен в nanoCAD (здесь, из стандартной 
+    папки шрифтов Windows C:\Windows\Fonts). В общем случае это надо дополнительно проверять.
+    В теории, аналогично можно "перезадать" стилю шрифт через ту же команду SetFont если у него установлен другой шрифт
+    """
     TNR_TextStyle.Height = 0.05
     ncad_doc.ActiveTextStyle = TNR_TextStyle
 
