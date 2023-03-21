@@ -45,7 +45,7 @@ if ncad_doc is not None:
     print(AcadRasterImage_props)
 
     """
-    Касательно работы с OLE. В ActiveX не работет механика их вставки. В ознакомительных целях код прикладывается 
+    Касательно работы с OLE. В ActiveX не работает механика их вставки. В ознакомительных целях код прикладывается 
     комментариями
     
     AcadOle_object = ncad_doc_ms.AddEmbeddedRaster(test_image_path, [-10, 0, 0], 0.56, 1.0)

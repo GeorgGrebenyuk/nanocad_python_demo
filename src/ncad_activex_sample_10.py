@@ -1,7 +1,7 @@
 """
 Демонстрационные материалы работы в Python через технологию COM (ActiveX® Automation) с nanoCAD
 Опубликованы на https://github.com/GeorgGrebenyuk/nanocad_python_demo
-Урок 10: Общие операции по работе с геометреий объектов и ПСК
+Урок 10: Общие операции по работе с геометрией объектов и ПСК
 """
 from ncad_activex_tools import ncad_tools
 import win32com.client
@@ -36,7 +36,7 @@ if ncad_doc is not None:
     Касательно ПСК и преобразований между ними:
     
     Доступ к перечню ПСК чертежа осуществляется из-под Базы данных чертежа Database.UserCoordinateSystems
-    Персчет между разными системами координат осуществляется через метод doc.Utility.TranslateCoordinates()
+    Пересчёт между разными системами координат осуществляется через метод doc.Utility.TranslateCoordinates()
     """
 
     doc_UCS_group = ncad_doc.Database.UserCoordinateSystems

@@ -46,7 +46,7 @@ if ncad_doc is not None:
     AcadTable_object.SetColumnWidth(1, 25)
     counter_rows = 2
     for class_name, obj_count in model_objects_data.items():
-        #Устаналиваем выравнивание для первой колонки
+        #Устанавливаем выравнивание для первой колонки
         AcadTable_object.SetCellAlignment(counter_rows, 0, 7)
         AcadTable_object.SetText(counter_rows, 0, class_name)
         AcadTable_object.SetText(counter_rows, 1, obj_count)

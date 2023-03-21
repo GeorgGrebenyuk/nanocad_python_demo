@@ -63,7 +63,7 @@ if ncad_doc is not None:
 
     """
     При желании добавить блоку атрибут, необходимо сделать это для Родительского блока
-    И после добавления атрибута обязательно обновляем Вхождение блока -- для регенрации у него этой позиции
+    И после добавления атрибута обязательно обновляем Вхождение блока -- для регенерации у него этой позиции
     """
     parent_block = dict(doc_blocks_instances)[AcadBlockReference_object.EffectiveName]
     attr = parent_block.AddAttribute(5, 8, "Test_attr", [0,0,0], "Test_attr", "Hello, ActiveX!")

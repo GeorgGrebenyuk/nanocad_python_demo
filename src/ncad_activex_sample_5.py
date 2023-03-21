@@ -31,7 +31,7 @@ if ncad_doc is not None:
     Примечание: в аргументах присвоения стилю шрифта есть параметры PitchAndFamily, CharSet описанные здесь 
     https://help.autodesk.com/view/ACD/2023/ENU/?guid=GUID-DB668114-2395-43C6-858C-2F2514C4BF46
     После создания текстового стиля делаем его активным в документе для автоматического связывания с новыми создаваемыми
-    объектами текта (AcadText и AcadMText)
+    объектами текста (AcadText и AcadMText)
     """
     TNR_TestStyle_name = "TimesNewRoman TEXT STYLE"
     TNR_TextStyle = ncad_db.TextStyles.Add(TNR_TestStyle_name)
