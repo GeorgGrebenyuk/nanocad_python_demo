@@ -18,6 +18,8 @@ if ncad_doc is not None:
      будет полезно рассмотреть.
      
      Пример полигональной сети -- это визуализация одноканального растрового снимка типа DEM (с высотами).
+     Также обращаем внимание, что для работы с функциями 3д-тел необходима лицензия на 3D-модуль у Пользователя!!! 
+     Иначе, будут выбиваться ошибки
     """
     def faces_work():
         """
@@ -77,7 +79,8 @@ if ncad_doc is not None:
     """
     AcadSphere_object = ncad_doc_ms.AddSphere([-10, -10, 0], 5)
     props = {
-        "Centroid": AcadSphere_object.Centroid
+        "Centroid": AcadSphere_object.Centroid,
+        "Volume": AcadSphere_object.Volume
     }
     print(props)
     #Обновляем прорисовку графики и центрируем экран в месте объектов
